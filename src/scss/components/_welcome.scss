@@ -1,0 +1,49 @@
+.welcome-main-container {
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+.welcome-main-tekst {
+    top: -100px;
+    position: absolute;
+    left: 42.5vw;
+    animation: back 1s linear;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bungee Spice', sans-serif;
+    font-size: 70px;
+}
+
+@keyframes back {
+    from {
+        top: -100;
+    }
+    to {
+        top: 20%;
+    }
+    
+}
+
+.welcome-paragraph {
+    width: 30vw;
+    position: absolute;
+    left: 36.5%;
+    top: 33%;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    animation: left 1s linear;
+}
+
+@keyframes left {
+    from {
+        left: 120%;
+    }
+    to {
+        left: 36.5%;
+    }
+    
+}

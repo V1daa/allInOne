@@ -1,0 +1,33 @@
+#right-whell, #left-whell {
+    animation: wheel 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.load-container {
+    position: fixed;
+    z-index: -2;
+    bottom: 0;
+    height: 30vh;
+    width: 20vw;
+    animation: run 2s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes run {
+    from {
+        left: -400px;
+    }
+    to {
+        left: 120%;
+    }
+}
