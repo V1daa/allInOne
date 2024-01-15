@@ -21,7 +21,7 @@ const Header = () => {
           <div className={isActive ? "left-menu" : ""}>
             <Link to={'/'}><h1 className="tekst-header">Home</h1></Link>
             <Link to={'/calc'}><h1 className="tekst-header">Calculator</h1></Link>
-            <h1 className="tekst-header">To-Do list</h1>
+            <Link to={'/to-do'}><h1 className="tekst-header">To-Do list</h1></Link>
             <h1 className="tekst-header">Weather App</h1>
             <h1 className="tekst-header">Binary translate</h1>
           </div>

@@ -23,17 +23,17 @@ const Calculator = () => {
 
   const calculate = () => {
     setCalc(eval(calc).toString());
-  }
+  };
 
   const deleteLast = () => {
-    if(calc == '') {
-      return
+    if (calc == "") {
+      return;
     }
 
     const value = calc.slice(0, -1);
 
-    setCalc(value)
-  }
+    setCalc(value);
+  };
 
   const createDigits = () => {
     const digits = [];
@@ -52,8 +52,8 @@ const Calculator = () => {
   };
 
   const clear = () => {
-    setCalc('')
-  }
+    setCalc("");
+  };
 
   return (
     <>
@@ -75,9 +75,13 @@ const Calculator = () => {
           <button className="minus" onClick={() => updateCalc("-")}>
             -
           </button>
-          <button className="del" onClick={deleteLast}>DEL</button>
+          <button className="del" onClick={deleteLast}>
+            DEL
+          </button>
 
-          <button className="ac" onClick={clear}>AC</button>
+          <button className="ac" onClick={clear}>
+            AC
+          </button>
 
           {createDigits()}
           <button className="zero" onClick={() => updateCalc("0")}>
@@ -86,7 +90,9 @@ const Calculator = () => {
           <button className="dot" onClick={() => updateCalc(".")}>
             .
           </button>
-          <button className="dorivn" onClick={calculate}>=</button>
+          <button className="dorivn" onClick={calculate}>
+            =
+          </button>
         </div>
       </div>
     </>

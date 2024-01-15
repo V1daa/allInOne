@@ -1,0 +1,150 @@
+.todo {
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+}
+
+.todo-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 50vw;
+  height: 70vh;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+    height: 4px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-position: 0% 0%;
+    background: linear-gradient(
+      to right,
+      #b294ff,
+      #57e6e6,
+      #feffb8,
+      #57e6e6,
+      #b294ff,
+      #57e6e6
+    );
+    background-size: 500% auto;
+    animation: gradient 3s linear infinite;
+  }
+}
+
+.todo-input-container {
+  margin-bottom: 3vh;
+  display: inline-flex;
+}
+
+.submit-todo {
+  border: none;
+  background-color: rgba(148, 148, 148, 0.5);
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.bi {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: rgba(148, 148, 148, 0.5);
+}
+
+$input-background: rgba(148, 148, 148, 0.345);
+$input-text-inactive: #7881a1;
+$input-text-active: #bfd2ff;
+
+// gradient animation
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.webflow-style-input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 1rem 1rem 1rem;
+  background: $input-background;
+  
+}
+
+.webflow-style-input > input {
+  border: none;
+  flex-grow: 1;
+  background-color: rgba(148, 148, 148, 0.5);
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  padding-left: 5px;
+  padding-top: 3px;
+  width: 260px;
+  transition: all 0.7s ease-in-out ;
+  &:focus {
+    width: 500px;
+  }
+}
+
+
+.todos-container {
+  position: absolute;
+  top: 5%;
+  left: 8%;
+  display: block;
+  overflow:scroll;
+  width: 43vw;
+  height: 50vh;
+  overflow-x: hidden;
+}
+
+.todos-text {
+  font-size: 24px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-left: 10px;
+}
+
+.todos {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.delete-todo-button {
+  width: 13px;
+  height: 13px;
+  border: none;
+  background-color: red;
+  border: 1px solid rgb(95, 95, 95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.checkbox-todo {
+  border: none;
+}
