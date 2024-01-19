@@ -52,7 +52,7 @@ const BinaryTrans = () => {
 
   return (
     <>
-      <button className="clear-button" onClick={() => window.location.reload()}>
+      <button className="clear-button" onClick={() => location.href = location.href}>
         Clear
       </button>
       <div className="binary-container">
