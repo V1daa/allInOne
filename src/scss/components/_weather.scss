@@ -1,0 +1,78 @@
+.search-container {
+    width: clamp(200px, 60%, 800px);
+    margin: 20px 30.5%;
+    position: absolute;
+}
+
+.curr-weather-container {
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    right: 33%;
+    top: 15%;
+    background-color: rgba(134, 134, 134, 0.945);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    animation: fly 0.5s ease-in-out;
+}
+
+@keyframes fly {
+    from {
+        top: -20%;
+    }
+    to {
+        top: 15%;
+    }
+}
+
+.weather-sun {
+    width: 150px;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+}
+
+.weather-city-name {
+    color: white;
+    position: absolute;
+    left: 6%;
+    top: 10px;
+    font-size: clamp(20px, 40px, 50px);
+}
+
+.weather-description {
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 6%;
+    font-size: clamp(16px, 30px, 40px);
+}
+
+.weather-params > div > h1, span {
+    color: white;
+    font-size: 20px;
+}
+
+.weather-params {
+    position: absolute;
+    left: 6%;
+    bottom: 20px;
+}
+
+.curr-temp {
+    position: absolute;
+    right: 25%;
+    bottom: 20%;
+    color: white;
+    font-size: 65px;
+}
+
+.param-value {
+    font-weight: 500;
+    position: absolute;
+    right: -120%;
+}
+
+.param-label {
+    font-weight: 300;
+}

@@ -120,11 +120,23 @@ $input-text-active: #bfd2ff;
   height: 50vh;
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  background-color: $input-background;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(148, 148, 148, 0.5);
+}
 
 .todos-text {
   font-size: 24px;
   font-family: 'Bebas Neue', sans-serif;
   margin-left: 10px;
+  max-width: 30vw;
 }
 
 .todos {

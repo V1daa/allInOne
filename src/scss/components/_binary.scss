@@ -1,0 +1,79 @@
+.binary-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  & > h1 {
+    color: white;
+    margin-top: 15px;
+  }
+  &  > textarea {
+    width: 700px;
+    height: 300px;
+    border-radius: 30px;
+    border: none;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: hidden;
+    resize: none;
+    margin-top: 60px;
+  }
+}
+
+
+
+.translated-binar {
+  position: absolute;
+  color: rgb(199, 199, 199);
+  width: 720px;
+  height: 300px;
+  background-color: rgb(81, 80, 80);
+  border-radius: 30px;
+  border: none;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 13px;
+  bottom: 9%;
+  overflow: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.translated-alp {
+  position: absolute;
+  color: rgb(199, 199, 199);
+  width: 720px;
+  height: 300px;
+  background-color: rgb(81, 80, 80);
+  border-radius: 30px;
+  border: none;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 13px;
+  top: 19%;
+  overflow: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.clear-button {
+  position: absolute;
+  left: 47.5%;
+  top: 10%;
+  width: 70px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    scale: 1.1;
+  }
+}
